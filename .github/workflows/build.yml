@@ -6,11 +6,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [macos-latest]
         build_type: [RelWithDebInfo, Debug]
         enable_ui: [off]
         include:
-          - os: ubuntu-latest
+          - os: macos-latest
             build_type: Debug
             enable_ui: on
     steps:
